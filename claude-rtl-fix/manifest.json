@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Claude RTL Fix - Hebrew",
+  "version": "1.0",
+  "description": "מתקן תצוגת עברית ב-Claude AI - יישור RTL אוטומטי עם שמירה על LTR לקוד",
+  "content_scripts": [
+    {
+      "matches": ["*://claude.ai/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  }
+}
